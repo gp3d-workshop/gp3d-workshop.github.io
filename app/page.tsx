@@ -123,7 +123,7 @@ export default function Home() {
           {topics.map((topic) => (
             <div
               key={topic.title}
-              className="w-full sm:w-[280px] rounded-xl border border-zinc-200 p-5 hover:border-zinc-300 transition-colors"
+              className="flex flex-col justify-center w-full sm:w-[280px] rounded-xl border border-zinc-200 p-5 hover:border-zinc-300 transition-colors"
             >
               <h3 className="font-medium text-zinc-900 mb-1.5">{topic.title}</h3>
               <p className="text-sm text-zinc-500 leading-relaxed">{topic.description}</p>

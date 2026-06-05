@@ -97,7 +97,7 @@ export const organizers: Person[] = [
   { name: 'Karim Kassab', affiliation: 'Criteo AI Lab', url: 'https://www.kkassab.com', src: '/people/karim.jpg' },
   { name: 'Antoine Guédon', affiliation: 'ENPC, École Polytechnique,\nUC Berkeley BAIR', url: 'https://anttwo.github.io/', src: '/people/antoine.jpg' },
   { name: 'Evin Pınar Örnek', affiliation: '', url: 'https://evinpinar.github.io', src: '/people/evin.jpeg' },
-  { name: 'Laurent Caraffa', affiliation: 'IGN', url: 'https://scholar.google.com/citations?user=N0YTGr8AAAAJ&hl=en', src: '/people/laurent.jpg' },
+  { name: 'Laurent Caraffa', affiliation: 'IGN', url: 'https://www.umr-lastig.fr/laurent-caraffa/', src: '/people/laurent.jpg' },
   { name: 'Jean-Yves Franceschi', affiliation: 'Criteo AI Lab', url: 'https://jyfranceschi.fr/', src: '/people/jean-yves.jpeg' },
   { name: 'Jeremie Mary', affiliation: 'Criteo AI Lab', url: 'https://scholar.google.com/citations?user=T3dQRjAAAAAJ&hl=fr', src: '/people/jeremie.jpg' },
 ]
