@@ -1,1 +1,0 @@
-# gp3d-workshop.github.io
