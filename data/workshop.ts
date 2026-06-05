@@ -86,6 +86,7 @@ export const speakers: Person[] = [
   {
     name: 'Sarah Parisot',
     affiliation: 'Microsoft',
+    url: 'https://www.microsoft.com/en-us/research/people/sarahparisot/',
     status: 'Tentative',
     src: '/people/sarah.jpg',
     expertise: 'World models; generative models; 3D reconstruction.',
