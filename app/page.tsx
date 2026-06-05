@@ -3,6 +3,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Avatar from '@/components/Avatar'
+import { Fragment } from 'react'
 import { ArrowUpRight, MapPin, CalendarDays } from 'lucide-react'
 import {
   workshop,
@@ -133,7 +134,7 @@ export default function Home() {
 
       {/* Speakers */}
       <Section id="speakers" title="Speakers" className="border-t border-zinc-200">
-        <div className="grid gap-8 sm:grid-cols-3 max-w-2xl mx-auto justify-items-center">
+        <div className="grid gap-8 sm:grid-cols-2 max-w-xl mx-auto justify-items-center">
           {speakers.map((s) => {
             const inner = (
               <>
@@ -148,7 +149,19 @@ export default function Home() {
                 <p className="text-sm text-zinc-500">{s.affiliation}</p>
                 {s.expertise && (
                   <p className="mt-2 text-xs text-zinc-400 leading-relaxed max-w-[16rem]">
-                    {s.expertise}
+                    {s.expertise
+                      .split(';')
+                      .map((t) => t.trim())
+                      .filter(Boolean)
+                      .map((seg, i, arr) => (
+                        <Fragment key={i}>
+                          <span className="whitespace-nowrap">
+                            {seg}
+                            {i < arr.length - 1 ? ';' : ''}
+                          </span>
+                          {i < arr.length - 1 ? ' ' : ''}
+                        </Fragment>
+                      ))}
                   </p>
                 )}
                 {s.status && (

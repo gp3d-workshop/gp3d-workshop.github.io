@@ -83,6 +83,13 @@ export const speakers: Person[] = [
     src: '/people/fatma.jpeg',
     expertise: 'Computer vision for autonomous driving; point tracking.',
   },
+  {
+    name: 'Sarah Parisot',
+    affiliation: 'Microsoft',
+    status: 'Tentative',
+    src: '/people/sarah.jpg',
+    expertise: 'World models; generative models; 3D reconstruction.',
+  },
 ]
 
 export const organizers: Person[] = [
