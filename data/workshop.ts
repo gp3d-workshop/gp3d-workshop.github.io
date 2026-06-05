@@ -119,6 +119,7 @@ export const programCommittee: Person[] = [
   { name: 'Bingchen Gong', affiliation: 'École Polytechnique', status: 'Confirmed' },
   { name: 'Diego Gomez', affiliation: 'École Polytechnique', status: 'Confirmed' },
   { name: 'Emery Pierson', affiliation: 'École Polytechnique', status: 'Confirmed' },
+  { name: 'Souhail Hadgi', affiliation: 'École Polytechnique', status: 'Confirmed' },
   { name: 'Léopold Maillard', affiliation: 'École Polytechnique, Dassault Systèmes', status: 'Confirmed' },
   { name: 'Giulio Viganò', affiliation: 'University of Milano-Bicocca', status: 'Confirmed' },
   { name: 'Vincent Lepetit', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
@@ -127,6 +128,7 @@ export const programCommittee: Person[] = [
   { name: 'Nicolas Violante', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
   { name: 'Tom Ravaud', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
   { name: 'Salma Galaaoui', affiliation: 'Valeo.ai', status: 'Confirmed' },
+  { name: 'Renaud Marlet', affiliation: 'Valeo.ai / École des Ponts ParisTech', status: 'Confirmed' },
   { name: 'Adrien Ramanana-Rahary', affiliation: 'Kyutai', status: 'Confirmed' },
 ]
 
@@ -154,7 +156,7 @@ export const keyDates = [
 
 export const cfp = {
   points: [
-    'Submissions are extended abstracts of up to seven pages (excluding references), formatted in the NeurIPS style and submitted through OpenReview.',
+    'Submissions are extended abstracts of up to six pages (excluding references), formatted in the NeurIPS style and submitted through OpenReview.',
     'Reviewing is double-blind, so submissions must be anonymized.',
     'Accepted contributions are presented as posters, with a subset selected for contributed talks.',
     'The workshop is non-archival and produces no proceedings; accepted contributions are made available on OpenReview and this website.',
