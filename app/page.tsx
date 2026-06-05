@@ -260,14 +260,21 @@ export default function Home() {
         subtitle="Reviewers"
         className="border-t border-zinc-200"
       >
-        <div className="max-w-2xl mx-auto divide-y divide-zinc-100">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
           {programCommittee.map((m) => (
-            <div key={m.name} className="flex flex-col items-center gap-1.5 py-4">
-              <span className="text-zinc-900">{m.name}</span>
-              <span className="text-sm text-zinc-500">{m.affiliation}</span>
+            <div
+              key={m.name}
+              className="flex flex-col items-center gap-1.5 rounded-xl border border-zinc-200 px-3 py-4 hover:border-zinc-300 transition-colors"
+            >
+              <span className="text-sm font-medium text-zinc-900 leading-tight">{m.name}</span>
+              <span className="text-xs text-zinc-500">{m.affiliation}</span>
               {m.status && <StatusBadge status={m.status} />}
             </div>
           ))}
+          <div className="flex flex-col items-center justify-center gap-1 rounded-xl border border-dashed border-amber-300 bg-amber-50 px-3 py-4 text-center">
+            <span className="text-sm font-medium text-amber-700 leading-tight">More to come</span>
+            <span className="text-xs text-amber-600">Continually recruiting</span>
+          </div>
         </div>
       </Section>
 

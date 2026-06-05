@@ -84,7 +84,6 @@ export const programCommittee: Person[] = [
   { name: 'Camille Billouard', affiliation: 'IGN', status: 'Confirmed' },
   { name: 'Teng Wu', affiliation: 'IGN', status: 'Confirmed' },
   { name: 'Mathieu Bredif', affiliation: 'IGN', status: 'Confirmed' },
-  { name: 'To be announced', affiliation: 'Recruiting', status: 'Invited' },
 ]
 
 export const schedule = [
