@@ -133,19 +133,42 @@ export default function Home() {
 
       {/* Speakers */}
       <Section id="speakers" title="Speakers" className="border-t border-zinc-200">
-        <div className="grid gap-8 sm:grid-cols-2 max-w-2xl mx-auto justify-items-center">
-          {speakers.map((s) => (
-            <div key={s.name} className="flex flex-col items-center text-center">
-              <Avatar name={s.name} src={s.src} size={80} />
-              <h3 className="mt-3 font-medium text-zinc-900 leading-tight">{s.name}</h3>
-              <p className="text-sm text-zinc-500">{s.affiliation}</p>
-              {s.status && (
-                <div className="mt-2">
-                  <StatusBadge status={s.status} />
-                </div>
-              )}
-            </div>
-          ))}
+        <div className="grid gap-8 sm:grid-cols-3 max-w-2xl mx-auto justify-items-center">
+          {speakers.map((s) => {
+            const inner = (
+              <>
+                <Avatar name={s.name} src={s.src} size={80} />
+                <h3 className="mt-3 font-medium text-zinc-900 leading-tight flex items-center justify-center gap-1">
+                  {s.url && <span className="w-3.5 shrink-0" aria-hidden="true" />}
+                  {s.name}
+                  {s.url && (
+                    <ArrowUpRight className="w-3.5 h-3.5 shrink-0 text-zinc-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  )}
+                </h3>
+                <p className="text-sm text-zinc-500">{s.affiliation}</p>
+                {s.status && (
+                  <div className="mt-2">
+                    <StatusBadge status={s.status} />
+                  </div>
+                )}
+              </>
+            )
+            return s.url ? (
+              <a
+                key={s.name}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center text-center"
+              >
+                {inner}
+              </a>
+            ) : (
+              <div key={s.name} className="group flex flex-col items-center text-center">
+                {inner}
+              </div>
+            )
+          })}
         </div>
       </Section>
 

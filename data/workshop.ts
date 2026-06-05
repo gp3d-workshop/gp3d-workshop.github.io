@@ -58,14 +58,22 @@ export type Person = {
 
 export const speakers: Person[] = [
   {
-    name: 'Gerard Pons-Moll',
-    affiliation: 'University of Tübingen',
+    name: 'Diane Larlus',
+    affiliation: 'NAVER LABS',
+    url: 'https://dlarlus.github.io',
     status: 'Confirmed',
   },
   {
-    name: 'To be announced',
-    affiliation: 'More speakers coming soon',
-    status: 'Tentative',
+    name: 'Gerard Pons-Moll',
+    affiliation: 'University of Tübingen',
+    url: 'https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html',
+    status: 'Confirmed',
+  },
+  {
+    name: 'Fatma Güney',
+    affiliation: 'Koç University',
+    url: 'https://mysite.ku.edu.tr/fguney/',
+    status: 'Confirmed',
   },
 ]
 
@@ -84,6 +92,11 @@ export const programCommittee: Person[] = [
   { name: 'Camille Billouard', affiliation: 'IGN', status: 'Confirmed' },
   { name: 'Teng Wu', affiliation: 'IGN', status: 'Confirmed' },
   { name: 'Mathieu Bredif', affiliation: 'IGN', status: 'Confirmed' },
+  { name: 'Artem Sevastopolsky', affiliation: 'Apple', status: 'Confirmed' },
+  { name: 'Hyun Jun Jung', affiliation: 'LG Graduate School of AI', status: 'Confirmed' },
+  { name: 'Ege Ozsoy', affiliation: 'TU Munich', status: 'Confirmed' },
+  { name: 'Sen Wang', affiliation: 'TU Munich', status: 'Confirmed' },
+  { name: 'Tony Wang', affiliation: 'TU Munich', status: 'Confirmed' },
 ]
 
 export const schedule = [
