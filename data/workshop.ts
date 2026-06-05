@@ -117,11 +117,15 @@ export const programCommittee: Person[] = [
   { name: 'Felix Tristram', affiliation: 'TU Munich', status: 'Confirmed' },
   { name: 'Julien Gaubil', affiliation: 'École Polytechnique', status: 'Confirmed' },
   { name: 'Bingchen Gong', affiliation: 'École Polytechnique', status: 'Confirmed' },
+  { name: 'Diego Gomez', affiliation: 'École Polytechnique', status: 'Confirmed' },
+  { name: 'Emery Pierson', affiliation: 'École Polytechnique', status: 'Confirmed' },
   { name: 'Léopold Maillard', affiliation: 'École Polytechnique, Dassault Systèmes', status: 'Confirmed' },
-  { name: 'Shiyao Li', affiliation: 'ENPC', status: 'Confirmed' },
-  { name: 'Thibaut Loiseau', affiliation: 'ENPC', status: 'Confirmed' },
-  { name: 'Nicolas Violante', affiliation: 'ENPC', status: 'Confirmed' },
-  { name: 'Tom Ravaud', affiliation: 'ENPC', status: 'Confirmed' },
+  { name: 'Giulio Viganò', affiliation: 'University of Milano-Bicocca', status: 'Confirmed' },
+  { name: 'Vincent Lepetit', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
+  { name: 'Shiyao Li', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
+  { name: 'Thibaut Loiseau', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
+  { name: 'Nicolas Violante', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
+  { name: 'Tom Ravaud', affiliation: 'École des Ponts ParisTech', status: 'Confirmed' },
   { name: 'Salma Galaaoui', affiliation: 'Valeo.ai', status: 'Confirmed' },
   { name: 'Adrien Ramanana-Rahary', affiliation: 'Kyutai', status: 'Confirmed' },
 ]
@@ -150,9 +154,11 @@ export const keyDates = [
 
 export const cfp = {
   points: [
-    'All accepted contributions are non-archival and will not appear in proceedings.',
-    'Submissions are managed through OpenReview, with public access to accepted papers via OpenReview and this website.',
-    'Work previously published at NeurIPS or other machine learning venues is not eligible. We also discourage submissions of already finalized work.',
-    'We target 3 reviews per paper, with no reviewer handling more than 3 papers.',
+    'Submissions are extended abstracts of up to seven pages (excluding references), formatted in the NeurIPS style and submitted through OpenReview.',
+    'Reviewing is double-blind, so submissions must be anonymized.',
+    'Accepted contributions are presented as posters, with a subset selected for contributed talks.',
+    'The workshop is non-archival and produces no proceedings; accepted contributions are made available on OpenReview and this website.',
+    'Following NeurIPS policy, work previously published at NeurIPS or other machine-learning venues is not eligible (including work presented at the main conference or in invited talks), and submissions are screened accordingly.',
+    'Each submission receives three reviews from the Program Committee; conflicts of interest are managed through OpenReview and manual checks.',
   ],
 }

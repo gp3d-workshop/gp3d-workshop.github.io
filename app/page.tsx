@@ -239,9 +239,9 @@ export default function Home() {
         className="border-t border-zinc-200"
       >
         <div className="max-w-content mx-auto">
-          <ul className="space-y-2.5">
+          <ul className="space-y-2 text-left list-disc pl-5 marker:text-accent">
             {cfp.points.map((point, i) => (
-              <li key={i} className="text-zinc-600">
+              <li key={i} className="text-zinc-600 pl-1">
                 {point}
               </li>
             ))}
