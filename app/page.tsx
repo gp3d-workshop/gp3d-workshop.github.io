@@ -137,7 +137,7 @@ export default function Home() {
           {speakers.map((s) => {
             const inner = (
               <>
-                <Avatar name={s.name} src={s.src} size={80} />
+                <Avatar name={s.name} src={s.src} size={140} />
                 <h3 className="mt-3 font-medium text-zinc-900 leading-tight flex items-center justify-center gap-1">
                   {s.url && <span className="w-3.5 shrink-0" aria-hidden="true" />}
                   {s.name}
@@ -146,6 +146,11 @@ export default function Home() {
                   )}
                 </h3>
                 <p className="text-sm text-zinc-500">{s.affiliation}</p>
+                {s.expertise && (
+                  <p className="mt-2 text-xs text-zinc-400 leading-relaxed max-w-[16rem]">
+                    {s.expertise}
+                  </p>
+                )}
                 {s.status && (
                   <div className="mt-2">
                     <StatusBadge status={s.status} />
@@ -246,7 +251,7 @@ export default function Home() {
           {organizers.map((o) => {
             const inner = (
               <>
-                <Avatar name={o.name} src={o.src} size={88} />
+                <Avatar name={o.name} src={o.src} size={120} />
                 <h3 className="mt-3 font-medium text-zinc-900 leading-tight flex items-center justify-center gap-1">
                   {o.url && <span className="w-3.5 shrink-0" aria-hidden="true" />}
                   {o.name}
@@ -254,7 +259,9 @@ export default function Home() {
                     <ArrowUpRight className="w-3.5 h-3.5 shrink-0 text-zinc-400 opacity-0 group-hover:opacity-100 transition-opacity" />
                   )}
                 </h3>
-                {o.affiliation && <p className="text-sm text-zinc-500">{o.affiliation}</p>}
+                {o.affiliation && (
+                  <p className="text-sm text-zinc-500 whitespace-pre-line">{o.affiliation}</p>
+                )}
               </>
             )
             return o.url ? (

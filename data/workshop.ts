@@ -5,7 +5,7 @@ export const workshop = {
   tagline:
     'Establishing 3D research as the foundation of AI systems that understand, predict, and act.',
   date: 'December 2026',
-  location: 'Paris / Sydney / Atlanta (TBD)',
+  location: 'Paris, France',
   openReviewUrl: '#',
 }
 
@@ -22,24 +22,24 @@ export const overview = {
 
 export const topics = [
   {
-    title: '3D & 4D Scene Representation',
+    title: '3D & 4D Scene Representation, Reconstruction & Generation',
     description:
-      'Differentiable and feed-forward methods for reconstructing static and dynamic scenes, geometry, and appearance.',
+      'Representing, reconstructing, and generating static and dynamic 3D scenes, geometry, and appearance.',
   },
   {
-    title: 'Generative 3D & World Models',
+    title: '3D-Aware World Models',
     description:
-      'Generative 3D content and 3D-aware world models that learn controllable, navigable environments.',
+      'Controllable, navigable world models grounded in 3D structure and learned from video.',
   },
   {
-    title: 'Spatial Foundation Models',
+    title: '3D-Grounded Vision-Language Models',
     description:
-      'Spatial foundation models and 3D-grounded vision-language models for general-purpose perception.',
+      'Connecting language and perception to metric and relational 3D understanding.',
   },
   {
     title: 'Grounded Spatial Reasoning',
     description:
-      'Connecting 3D structure to planning, manipulation, navigation, and reliable physical reasoning.',
+      'Turning 3D structure into reliable planning, navigation, manipulation, and physical reasoning.',
   },
   {
     title: '3D for Scientific Domains',
@@ -54,6 +54,7 @@ export type Person = {
   url?: string
   status?: string
   src?: string
+  expertise?: string
 }
 
 export const speakers: Person[] = [
@@ -62,28 +63,35 @@ export const speakers: Person[] = [
     affiliation: 'NAVER LABS',
     url: 'https://dlarlus.github.io',
     status: 'Confirmed',
+    src: '/people/diane.jpg',
+    expertise:
+      'Visual representation learning; 3D and 4D scene understanding; distillation and foundation encoders.',
   },
   {
     name: 'Gerard Pons-Moll',
     affiliation: 'University of Tübingen',
     url: 'https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html',
     status: 'Confirmed',
+    src: '/people/gerard.png',
+    expertise: '3D human pose, shape, and clothing; neural implicit surfaces.',
   },
   {
     name: 'Fatma Güney',
     affiliation: 'Koç University',
     url: 'https://mysite.ku.edu.tr/fguney/',
     status: 'Confirmed',
+    src: '/people/fatma.jpeg',
+    expertise: 'Computer vision for autonomous driving; point tracking.',
   },
 ]
 
 export const organizers: Person[] = [
-  { name: 'Karim Kassab', affiliation: 'Criteo AI Lab', url: 'https://www.kkassab.com' },
-  { name: 'Antoine Guédon', affiliation: 'École des Ponts (ENPC)', url: 'https://anttwo.github.io/' },
-  { name: 'Evin Pinar Örnek', affiliation: '', url: 'https://evinpinar.github.io' },
-  { name: 'Laurent Caraffa', affiliation: 'IGN', url: 'https://scholar.google.com/citations?user=N0YTGr8AAAAJ&hl=en' },
-  { name: 'Jean-Yves Franceschi', affiliation: 'Criteo AI Lab', url: 'https://jyfranceschi.fr/' },
-  { name: 'Jeremie Mary', affiliation: 'Criteo AI Lab', url: 'https://scholar.google.com/citations?user=T3dQRjAAAAAJ&hl=fr' },
+  { name: 'Karim Kassab', affiliation: 'Criteo AI Lab', url: 'https://www.kkassab.com', src: '/people/karim.jpg' },
+  { name: 'Antoine Guédon', affiliation: 'ENPC, École Polytechnique,\nUC Berkeley BAIR', url: 'https://anttwo.github.io/', src: '/people/antoine.jpg' },
+  { name: 'Evin Pınar Örnek', affiliation: '', url: 'https://evinpinar.github.io', src: '/people/evin.jpeg' },
+  { name: 'Laurent Caraffa', affiliation: 'IGN', url: 'https://scholar.google.com/citations?user=N0YTGr8AAAAJ&hl=en', src: '/people/laurent.jpg' },
+  { name: 'Jean-Yves Franceschi', affiliation: 'Criteo AI Lab', url: 'https://jyfranceschi.fr/', src: '/people/jean-yves.jpeg' },
+  { name: 'Jeremie Mary', affiliation: 'Criteo AI Lab', url: 'https://scholar.google.com/citations?user=T3dQRjAAAAAJ&hl=fr', src: '/people/jeremie.jpg' },
 ]
 
 export const programCommittee: Person[] = [
@@ -97,25 +105,37 @@ export const programCommittee: Person[] = [
   { name: 'Ege Ozsoy', affiliation: 'TU Munich', status: 'Confirmed' },
   { name: 'Sen Wang', affiliation: 'TU Munich', status: 'Confirmed' },
   { name: 'Tony Wang', affiliation: 'TU Munich', status: 'Confirmed' },
+  { name: 'Nils Morbitzer', affiliation: 'TU Munich', status: 'Confirmed' },
+  { name: 'Felix Tristram', affiliation: 'TU Munich', status: 'Confirmed' },
+  { name: 'Julien Gaubil', affiliation: 'École Polytechnique', status: 'Confirmed' },
+  { name: 'Bingchen Gong', affiliation: 'École Polytechnique', status: 'Confirmed' },
+  { name: 'Léopold Maillard', affiliation: 'École Polytechnique, Dassault Systèmes', status: 'Confirmed' },
+  { name: 'Shiyao Li', affiliation: 'ENPC', status: 'Confirmed' },
+  { name: 'Thibaut Loiseau', affiliation: 'ENPC', status: 'Confirmed' },
+  { name: 'Nicolas Violante', affiliation: 'ENPC', status: 'Confirmed' },
+  { name: 'Tom Ravaud', affiliation: 'ENPC', status: 'Confirmed' },
+  { name: 'Salma Galaaoui', affiliation: 'Valeo.ai', status: 'Confirmed' },
+  { name: 'Adrien Ramanana-Rahary', affiliation: 'Kyutai', status: 'Confirmed' },
 ]
 
 export const schedule = [
   { time: '08:50 – 09:00', session: 'Opening remarks', detail: 'Organizers' },
-  { time: '09:00 – 10:00', session: 'Invited talk 1', detail: '' },
-  { time: '10:00 – 10:30', session: 'Contributed talks 1', detail: 'Five short talks' },
-  { time: '10:30 – 12:00', session: 'Poster session 1', detail: '' },
-  { time: '12:00 – 13:00', session: 'Lunch', detail: '' },
-  { time: '13:00 – 14:00', session: 'Invited talk 2', detail: '' },
-  { time: '14:00 – 14:30', session: 'Contributed talks 2', detail: 'Five short talks' },
+  { time: '09:00 – 09:45', session: 'Invited talk 1', detail: '' },
+  { time: '09:45 – 10:30', session: 'Invited talk 2', detail: '' },
+  { time: '10:30 – 10:45', session: 'Contributed talks 1', detail: 'Two six-minute talks' },
+  { time: '10:45 – 12:15', session: 'Poster session 1', detail: '' },
+  { time: '12:15 – 13:30', session: 'Lunch', detail: '' },
+  { time: '13:30 – 14:15', session: 'Invited talk 3', detail: '' },
+  { time: '14:15 – 14:30', session: 'Contributed talks 2', detail: 'Two six-minute talks' },
   { time: '14:30 – 16:00', session: 'Poster session 2', detail: '' },
-  { time: '16:00 – 17:15', session: 'Panel & debate', detail: 'Cross-community discussion' },
-  { time: '17:15 – 17:30', session: 'Closing remarks', detail: '' },
+  { time: '16:00 – 17:00', session: 'Panel & debate', detail: 'Cross-community discussion' },
+  { time: '17:00 – 17:15', session: 'Closing remarks', detail: '' },
 ]
 
 export const keyDates = [
   { date: 'Jul 25, 2026', label: 'Call for papers' },
-  { date: 'Aug 29, 2026', label: 'Submission deadline' },
-  { date: 'Sep 1–15, 2026', label: 'Reviewing period' },
+  { date: 'Sep 4, 2026', label: 'Submission deadline' },
+  { date: 'Sep 7–18, 2026', label: 'Reviewing period' },
   { date: 'Sep 28, 2026', label: 'Author notification' },
   { date: 'Oct 30, 2026', label: 'Camera-ready' },
 ]
