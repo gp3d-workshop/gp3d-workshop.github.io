@@ -17,7 +17,7 @@ export const overview = {
     'Our goal is to position 3D research as a core component of future AI systems that both perceive the world and build useful models that act within it.',
   ],
   whyNow:
-    'The field has reached an inflection point: within roughly two years, 3D Gaussian splatting, pose-free feed-forward reconstruction, single-image 3D models, and video-trained world models have made 3D both fast and pretrainable, while robotics and spatial reasoning in vision-language models have made spatial grounding a first-order concern for general-purpose systems. Yet these threads advance largely in separation. A dedicated venue now can align these efforts across communities.',
+    'The field has reached an inflection point: within the last few years, 3D Gaussian splatting, pose-free feed-forward reconstruction, single-image 3D models, and video-trained world models have significantly advanced 3D representation and reconstruction, fueled by advances in ML. In parallel, robotics and spatial reasoning in vision-language models have made spatial grounding a first-order concern for general-purpose systems. Yet, these threads advance largely in separation, with robotics, generative-modeling, and neural-rendering groups relying on the same geometric primitives while collaborating less with one another than their shared foundations would suggest. A dedicated venue now can align these efforts across communities. To the best of our knowledge, recent NeurIPS editions have not hosted a workshop dedicated to 3D ML, despite its growing footprint at the conference.',
 }
 
 export const topics = [
